@@ -50,6 +50,11 @@ git log
 OU
 git log --oneline
 
+--Enviar do repositório local para o Remoto(Github)
+git push -u origin master
+(se usar -u, nas promixas é : ==>>)
+git push 
+
 --POR ALGUM MOLTIVO, QUERO DESFAZER ALGUMAS ALTERAÇÕES FEITAS E QUE NÃO FOI COMITADA AINDA, VOLTAR AO ÚLTIMO COMMIT
 git clean -df
 git checkout -- .
@@ -67,7 +72,11 @@ git checkout <código_do_commit>
 git checkout <nome_do_brach>
 
 
+--Associar repositório local ao repositório remoto, com outro apelido:
+git remote add origin <URI_Repositorio_Remoto>
 
+--Associar o repositório local ao repositório remoto, mantendo o mesmo apelido:
+git remote set-url origin <URI_Repositorio_Remoto>
 
 -- COMANDO PARA LISTAR ARQUIVOS AND DIRETÓRIOS
 ls
@@ -97,7 +106,7 @@ git add . -- Adicionando arquivos a serem enviados
 git status -- Verificando
 git commit -m "Enviando"
 git remote origin https://github.com/EwertonMaik/csharp.git --Caminho para onde será enviado arquivos ou modificações
-git push origin master -- Arquivos Enviados
+git push  -u origin master -- Arquivos Enviados
 
 
 --COMANDO PARA EXIBIR O CAMINHO QUE ESTÀ LOCALIZADO
