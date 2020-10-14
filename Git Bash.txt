@@ -78,13 +78,19 @@ git remote add origin <URI_Repositorio_Remoto>
 --Associar o repositório local ao repositório remoto, mantendo o mesmo apelido:
 git remote set-url origin <URI_Repositorio_Remoto>
 
+--COMANDO PARA ATULIZAR REPOSITÓRIO LOCAL EM RELAÇÃO AO REPOSITÓRIO REMOTO
+git pull origin master
+
+--Copiar o Repositório Remoto para seu Computador, inclusive histórico de commits:
+git clone <URI_Repositorio_Remoto>
+
+-- COMANDO PARA CLONAR DIRETÓRIO DO GIHHUB PARA O DIRETÓRIO LOCAL
+git clone https://github.com/EwertonMaik/pjc_adm_dados.git
+
 -- COMANDO PARA LISTAR ARQUIVOS AND DIRETÓRIOS
 ls
 -- COMANDO COM PARAMETRO Á LISTA DIRETÓRIO OCULTOS
 ls -a
-
--- COMANDO PARA CLONAR DIRETÓRIO DO GIHHUB PARA O DIRETÓRIO LOCAL
-git clone https://github.com/EwertonMaik/pjc_adm_dados.git
 
 -- COMANDO PARA CRIAR UMA PASTA
 mkdir nome_pasta
