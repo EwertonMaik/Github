@@ -1,0 +1,110 @@
+untracked / stage / commited
+--COMANDO PARA TRABALHAR COM VERSIONAMENTO DE ARQUIVOS NO GITHUB - USANDO O GIT BASH
+
+GRAFO DE COMMIT
+
+--CRIAR O .GITIGNORE A PARTIR DA ESPECIFICAÇÃO TÉCNICA PARA PROJETOS DO VISUAL STUDIO 2019
+https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+
+--EXIBE TODAS INFORMAÇÕES DE AJUDA DE COMANDOS
+git
+
+--CRIAR UM REPOSITÓRIO LOCAL DO GIT / PARA CONTROLAR A VERSÃO
+--DEVE SER FEITO DENTRO DO DIRETÓRIO QUE DESEJA CONTROLAR
+--PODE-SE ACESSAR A PASTA, CLICAR COM BOTÃO DIREITO E (GIT BASH HERE), APÓS DIGITAR O COMANDO:
+git init
+
+--COMANDO PARA LISTAR VERSÃO DO GITHUB
+git version
+
+--COMANDO PARA CONFIGURAR USUÁRIO E E-MAIL DE CONEXÃO
+git config --global user.name "Ewerton Maik"
+git config --global user.email "ewertonmsa@hotmail.com"
+
+--COMANDO PARA CONFIGURAR O EDITOR VS CODE COMO PADRÃO
+git config --global core.editor "C:\Users\Ewerton Maik\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+
+--COMANDO PARA LIMPAR TELA
+clear
+
+--COMANDO PARA LISTAR USUÁRIO E E-MAIL CONFIGURADO
+git config user.name
+git config user.email
+git config core.editor
+
+--COMANDO PARA VERIFICAR O STATUS DO PROJETO, SE EXISTE MODIFICAÇÕES PARA SER ADICIONADAS AO COMMIT
+git status
+
+-- COMANDO PARA ADICIONAR TODAS AS MODIFICAÇÕES AO CONTEINER DO GIT / ÁREA DE STAGE DO GIT
+git add .
+OU
+git nome_arquivo.txt
+
+git status
+
+--COMANDO PARA CONFIRMAR/COMITAR AS INFORMAÇÕES ALTERADAS QUE ESTÃO NO CONTEINER
+git commit -m "novas modiificações ADICIONADAS"
+
+--VERIFICAR SE TEVE COMMIT OU EXISTE COMMITS
+git log
+OU
+git log --oneline
+
+--POR ALGUM MOLTIVO, QUERO DESFAZER ALGUMAS ALTERAÇÕES FEITAS E QUE NÃO FOI COMITADA AINDA, VOLTAR AO ÚLTIMO COMMIT
+git clean -df
+git checkout -- .
+
+--REMOVER O ÚLTIMO COMMIT, PORÉM MANTER AS ALTERAÇÕES DO ARQUIVOS
+git reset --soft HEAD~1
+
+--REMOVER O ÚLTIMO COMMIT E SUAS ALTERAÇÕES TAMBÉM
+git reset --hard HEAD~1
+
+
+-- COMANDO PARA LISTAR ARQUIVOS AND DIRETÓRIOS
+ls
+-- COMANDO COM PARAMETRO Á LISTA DIRETÓRIO OCULTOS
+ls -a
+
+-- COMANDO PARA CLONAR DIRETÓRIO DO GIHHUB PARA O DIRETÓRIO LOCAL
+git clone https://github.com/EwertonMaik/pjc_adm_dados.git
+
+-- COMANDO PARA CRIAR UMA PASTA
+mkdir nome_pasta
+
+--COMANDO PARA CRIAR ARQUIVOS E ALTERAR REGISTROS DE DATA E HORA
+touch exemplo.txt
+touch nome_pasta/exemplo.txt
+
+
+
+
+--COMANDO PARA ENVIAR ALTERAÇÕES PARA REPOSITÓRIO ONLINE GITHUB
+git push -u origin master
+
+-- COMANDO PARA ENVIAR ARQUIVOS LOCAIS PARA O GITHUB ONLINE
+git init -- Iniciando
+git status -- Verificando arquivos
+git add . -- Adicionando arquivos a serem enviados
+git status -- Verificando
+git commit -m "Enviando"
+git remote origin https://github.com/EwertonMaik/csharp.git --Caminho para onde será enviado arquivos ou modificações
+git push origin master -- Arquivos Enviados
+
+
+--COMANDO PARA EXIBIR O CAMINHO QUE ESTÀ LOCALIZADO
+pwd
+
+-- COMANDO VAI DIRETÓRIO C:
+CD /C
+
+-- COMANDO PARA VERIFICAR LOGS DOS COMMIT
+GIT LOG
+git log --oneline (lista logs)
+
+
+code .
+
+--COMANDO PARA BUSCAR ALTERAÇÕES DO REPOSITÓRIO ONLINE GITHUB E BAIXAR PARA LOCAL
+git fetch https://EwertonMaik@github.com/EwertonMaik/AppJava01.git +refs/heads/master:refs/remotes/origin/master
+git merge origin/master
