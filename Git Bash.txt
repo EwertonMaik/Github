@@ -60,6 +60,14 @@ git reset --soft HEAD~1
 --REMOVER O ÚLTIMO COMMIT E SUAS ALTERAÇÕES TAMBÉM
 git reset --hard HEAD~1
 
+--(Não Exclui Nada!) - Alternar e deixar o Projeto ou arquivos no estado de um Commit Realizado:
+git checkout <código_do_commit>
+
+--(Não Exclui Nada!) - Voltar para o atual commit que estava:
+git checkout <nome_do_brach>
+
+
+
 
 -- COMANDO PARA LISTAR ARQUIVOS AND DIRETÓRIOS
 ls
