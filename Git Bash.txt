@@ -131,3 +131,13 @@ code .
 --COMANDO PARA BUSCAR ALTERAÇÕES DO REPOSITÓRIO ONLINE GITHUB E BAIXAR PARA LOCAL
 git fetch https://EwertonMaik@github.com/EwertonMaik/AppJava01.git +refs/heads/master:refs/remotes/origin/master
 git merge origin/master
+
+*******************************************
+OSEMN
+OLEMI
+Obter, Limpar, Explorar, Modelar e Interpretar
+data scraping
+https://www.kaggle.com/
+https://medium.com/@wanderson.coord/kibana-incr%C3%ADvel-ferramenta-para-voc%C3%AA-analisar-suas-aplica%C3%A7%C3%B5es-bancos-e-servidores-6824d825b3da
+https://www.elastic.co/pt/kibana
+https://marketplace.hitachivantara.com/pentaho/
