@@ -141,3 +141,129 @@ https://www.kaggle.com/
 https://medium.com/@wanderson.coord/kibana-incr%C3%ADvel-ferramenta-para-voc%C3%AA-analisar-suas-aplica%C3%A7%C3%B5es-bancos-e-servidores-6824d825b3da
 https://www.elastic.co/pt/kibana
 https://marketplace.hitachivantara.com/pentaho/
+
+-- ###################################################
+
+git config --global user.name "Seu nome"
+git config --global user.email "Seu email de cadastro do Github"
+git config --list
+
+-- gerando chave ssh para o github
+ssh-keygen -t rsa -b 4096 -C "ewertonmsa@hotmail.com"
+
+-- Passo a passo: Salvar primeira versão de um projeto no Github
+git init
+git add .
+git status 
+git commit -m "Mensagem explicativa"
+git branch -M main
+git remote add origin git@github:seuusuario/seurepositorio.git
+git push -u origin main
+
+-- Salvando uma nova versão
+git status
+git add.
+git commit -m "Mensagem explicativa"
+git push
+
+-- clonar e modificar um projeto de um repositório remoto que você tem permissão para alterar
+git clone git@github.com:seuusuario/seurepositorio.git
+git add .
+git commit -m "Mensagem explicativa"
+git push
+git log
+
+
+code . -- Opção para abrir o Visual Studio Code de dentro do diretório do GitBash
+
+-- verificando o histórico de versões
+git log
+git log --oneline -- listagem resumida
+
+
+-- git status, git add e stage
+modified untracked deleted / staged / commited
+
+git reset -- tira tudo da area de stage adicionado pelo git add .
+
+git add sobre.html -- adicionando na área de stage apenas um arquivo
+git commit -m "Adicionado arquivo sobre"
+git status
+
+-- Verificar diferenças entre arquivos
+git diff vendas.html
+
+git checkout (código)
+git checkout main
+
+git checkout HEAD~1
+
+-- importante antes de fazer o checkout para voltar para HEAD, certifique-se de que
+não haja mudanças nos arquivos. Se você acidentalmente mudou alguma coisa, desfaça
+as modificações usando:
+git reset
+git cleann -df
+git checkout -- .
+
+-- remover arquivos da área de stage
+git status
+git reset
+
+
+-- desfazer modificações não salvas
+git status
+git reset
+git clean -df
+git checkout -- .
+
+-- O que fazer quando abre o editor VIM
+Habilitar o modo de edição:
+i
+Sair do VIM, salvando as alterações:
+<ESC>
+:wq
+<ENTER>
+Sair do VIM, descartando as alterações:
+<ESC>
+:q!
+<ENTER>
+
+-- Desfazer o último commit
+git status
+git reset --soft HEAD~1
+
+-- Deletar commits e também modificações nos arquivos
+Voltar o projeto ao estado de um dado commit
+deletar commits e alterações posteriores a esse commit
+git status
+git reset -hard <código do commit>
+
+-- Voltar o projeto ao estado do penultimo commit
+git status
+git reset --hard HEAD~1
+
+-- Traz o projeto de volta ao estado como esta publicado no GitHub
+git status
+git pull origin main
+git pull <nome do remote> <nome do branch>
+
+
+-- Como resolver push rejeitado
+Não é permitido enviar um push se seu repositório local está atrasado em relação ao histórico remoto.
+git push
+
+-- Resolvendo Conflito
+Mesclando o histórico de dois commits que mexeram no mesmo
+arquivo
+
+git pull <nome do remote> <nome do branch>
+
+-- como que sobrescreve um histórico no Github
+git push -f <nome do remote> <nome do branch>
+
+-- Apontar o projeto para outro repositório remoto
+git remote set-url origin git@github.com:seuusuario/seurepositorio.git
+
+conferir
+git remote -v
+git push -u origin main
